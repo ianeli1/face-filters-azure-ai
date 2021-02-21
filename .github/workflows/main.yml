@@ -42,9 +42,7 @@ jobs:
       - name: Testing
         run: npm run test --if-present
         
-      - name: Building and publishing
-        run: |
-          npm run build
-          npm publish
-            env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Building
+        run: npm run build
+      - name: Publish
+        run: NODE_AUTH_TOKEN=${{secrets.NPM_TOKEN}} npm publish
