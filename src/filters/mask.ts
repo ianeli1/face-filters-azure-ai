@@ -25,8 +25,8 @@ export function mask(
         let offsetPos = { x: 0, y: 0 };
         if (offset) offsetPos = offset(coords, { w, h });
         return {
-          x: coords.x + (coords.w - w) / 2,
-          y: coords.y + (coords.h - h) / 2,
+          x: coords.x + (coords.w - w) / 2 + offsetPos.x,
+          y: coords.y + (coords.h - h) / 2 + offsetPos.y,
         };
       }
     );
