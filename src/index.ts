@@ -3,7 +3,8 @@ export { composite } from "./filters/composite";
 import { mask } from "./filters/mask";
 export { mask };
 export { crop } from "./filters/crop";
-import jimp, { read } from "jimp";
+import { read } from "jimp";
+import type jimp from "jimp";
 export { FaceAPI } from "./api";
 
 export async function loadImage(url: string): Promise<jimp | null> {
