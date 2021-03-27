@@ -1,6 +1,6 @@
 {
   "name": "face-filters-azure-ai",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "./dist/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -12,6 +12,10 @@
     "axios": "^0.21.1",
     "jimp": "^0.16.1"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo Good one"
